@@ -1,0 +1,2 @@
+@import url('blue-theme.css') only screen and (prefers-color-scheme: light);
+@import url('dark-theme.css') only screen and (prefers-color-scheme: dark);
