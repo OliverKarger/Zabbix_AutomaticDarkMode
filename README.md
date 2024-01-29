@@ -1,4 +1,4 @@
-# Simple Custom Theme CSS that loads Dark/Blue Theme based on "perfers-color-scheme" Media Query.
+# Simple Custom Theme CSS that loads Dark/Blue Theme based on "prefers-color-scheme" Media Query.
 
 ### Installation Instructions
 
