@@ -4,9 +4,9 @@
 
 1. Copy `APP.php` to `/usr/share/zabbix/include/classes/core/APP.php`<br>
     This File adds a "Auto Theme" to the Default Theme pool by
-    extending the Method `getThemes()` from `ZBase`.<br>
-    If you already have a File like this simply add (or extend) your custom
-    `class APP extends ZBase` with the following Method
+    overriding the Method `getThemes()` from `ZBase`.<br>
+    If you already have a File like this simply add this Code your
+    `class APP extends ZBase`
     ```php
     public static function getThemes() {
         return array_merge(parent::getThemes(), [
@@ -17,7 +17,7 @@
     ```
 2. Copy `automatic_dark_mode.css` to `/usr/share/zabbix/assets/style/auto_dark_mode.css`<br>
     This CSS File simply imports either `blue-theme.css` or `dark-theme.css` depending
-    on what the media query `prefers-color-scheme` results. (dark/light)
+    on what the media query `prefers-color-scheme` returns. (dark/light)
     You can also import alternate `*.css` Files by simply changing `url('<file>')`.
 
 After you restart the Zabbix Frontend, a new Theme called `Auto Theme` should appear.
