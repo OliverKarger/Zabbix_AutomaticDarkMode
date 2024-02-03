@@ -38,3 +38,6 @@ After you restart the Zabbix Frontend, a new Theme called `Auto Theme` should ap
     This will add both Files as Read-Only Mounts
 
 This should be enough, but depending on your Docker Compose Project you might need to<br> complete additonal steps
+
+### Open Tasks:
+- Make this Work with Color Schemes from Graphs/Plots. Those are not controlled by CSS but by a PHP Code in `charts<0-7>.php`
